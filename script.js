@@ -1,4 +1,4 @@
-"use strict";
+"use none";
 
 function getDogImage(numberInput) {
     if (!numberInput){
