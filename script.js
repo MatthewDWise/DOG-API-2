@@ -13,7 +13,7 @@ function getDogImage(numberInput) {
         fetch(`https://dog.ceo/api/breeds/image/random/${numberInput}`)
         .then(response => response.json())
         .then(responseJson => displayResults(responseJson))
-        .catch(error => alert('Something went wrong.  Try again later.'));
+        .catch(error =>alert('Something went wrong.  Try again later.'));
     }
 }
 
