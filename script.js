@@ -2,7 +2,8 @@
 
 function getDogImage(numberInput) {
     if (!numberInput){
-        fetch("https://dog.ceo/api/breeds/image/random/3")
+        fetch("https://dog.ceo/api/breeds/image/random/3", {
+            credentials: 'include'})
         .then(response => response.json())
         .then(responseJson => displayResults(responseJson));        
     } else if (numberInput > 50) {
@@ -10,7 +11,8 @@ function getDogImage(numberInput) {
     } else if (numberInput == 0) {
         return alert("Minimum number of pups is 1!");
     } else {
-        fetch(`https://dog.ceo/api/breeds/image/random/${numberInput}`)
+        fetch(`https://dog.ceo/api/breeds/image/random/${numberInput}`, {
+            credentials: 'include'})
         .then(response => response.json())
         .then(responseJson => displayResults(responseJson))
         .catch(error =>alert('Something went wrong.  Try again later.'));
