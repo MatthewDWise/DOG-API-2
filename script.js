@@ -1,4 +1,5 @@
-"use none";
+"use strict";
+document.cookie = "samesite=none";
 
 function getDogImage(numberInput) {
     if (!numberInput){
