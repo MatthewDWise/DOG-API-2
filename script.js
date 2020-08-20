@@ -22,7 +22,8 @@ function displayResults(responseJson){
     console.log(responseJson);
     $('.results').html("");
     response.Json.message.forEach(renderedImage =>{
-        $('.results').append(`<img src ="${responseJson.message}" class ="results-img">`)
+        $('.results').append(`<img src ="${responseJson.message}" class ="results-img">`);
+    });
     $('.results').removeClass('hidden');
 }
 
