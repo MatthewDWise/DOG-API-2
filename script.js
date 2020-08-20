@@ -20,7 +20,7 @@ function getDogImage(numberInput) {
 function displayResults(responseJson){
     console.log(responseJson);
     $('.results').html("");
-    response.Json.message.forEach(renderedImage =>{
+    responseJson.message.forEach(renderedImage =>{
         $('.results').append(`<img src ="${responseJson.message}" class ="results-img">`);
     });
     $('.results').removeClass('hidden');
