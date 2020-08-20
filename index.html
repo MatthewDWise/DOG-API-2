@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href= "style.css"/>
+    <title>Dog API simple GET</title>
+</head>
+<body>
+    <section id ="container">
+        <h1 class = "doggoHeading">Fetch the dogs!</h1>
+        <div id ="input"></div>
+        <form id ="doggie-form">
+            <div class="form-style">
+                <h5>How many dog photos do you want?  Choose a number from 1 to 50!</h5>
+                <input type="text" id ="number-dog" class = "form-style" placeholder = "3"/>
+                </div>
+                <div class = "button">
+                    <input type = "submit" id="get" class = "fetch-button" value = "Fetch!"/>
+                </div>
+        </form>
+    </section>
+    <section class = "results hidden">
+        <h3>Here are the dogs!</h3>
+        <img class = "results-img" alt ="placeholder">
+    </section>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src = "script.js"></script>
+</body>
+</html>
