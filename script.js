@@ -1,4 +1,4 @@
-
+samesite=none;
 
 function getDogImage(numberInput) {
     if (!numberInput){
