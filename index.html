@@ -4,31 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href= "style.css"/>
-    <title>Dog API simple GET</title>
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
-      integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
-      crossorigin="anonymous"
-    />
+    <title>Github Search</title>
 </head>
 <body>
-    <section id ="container">
-        <h1 class = "doggoHeading">Fetch the dogs!</h1>
-        <div id ="input"></div>
-        <form id ="doggie-form">
-            <div class="form-style">
-                <h5>How many dog photos do you want?  Choose a number from 1 to 50!</h5>
-                <input type="text" id ="number-dog" class = "form-style" placeholder = "3"/>
-                </div>
-                <div class = "button">
-                    <input type = "submit" id="get" class = "fetch-button" value = "Fetch!"/>
-                </div>
-        </form>
-    </section>
-    <section class = "results hidden">
-        <h3>Here are the dogs!</h3>
-        <img class = "results-img" alt ="placeholder">
+   <form id = "search-form">
+     <h1>Search for users Repos</h1>
+     <input type = "text" id = "user-input-info">
+     <button type = "submit" id = "Submit">Submit</button>
+     </form>
+    <section class = "results-display-container hidden">
+      <div id = "results-display">
+        </div>    
     </section>
     <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src = "script.js"></script>
